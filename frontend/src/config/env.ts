@@ -1,7 +1,5 @@
-/**
- * Responsibility: Typed accessors for import.meta.env (VITE_API_BASE_URL).
- */
+const base = import.meta.env.VITE_API_BASE_URL ?? '/api/v1';
 
 export const env = {
-  apiBaseUrl: import.meta.env.VITE_API_BASE_URL ?? '',
+  apiBaseUrl: base.endsWith('/') ? base.slice(0, -1) : base,
 };
