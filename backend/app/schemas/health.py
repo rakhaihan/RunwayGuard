@@ -1,1 +1,8 @@
-"""Responsibility: Health check response model."""
+from pydantic import BaseModel
+
+
+class HealthResponse(BaseModel):
+    status: str
+    app_name: str
+    version: str
+    detector_backend: str

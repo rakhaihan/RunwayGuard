@@ -1,8 +1,9 @@
-# Responsibility: Python project metadata, dependencies, and tool configuration (ruff, pytest).
-# Implementation: Phase 0.
-
 [project]
 name = "runwayguard-backend"
 version = "0.1.0"
 description = "RunwayGuard AI FOD detection API"
 requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
