@@ -7,6 +7,7 @@ import {
   RunwayStatusCard,
   UploadPanel,
 } from '@/components/dashboard';
+import { AviationAnalyticsModule } from '@/components/analytics';
 import {
   AnimatedAlertSystem,
   DetectionHistoryPanel,
@@ -53,8 +54,16 @@ export function DashboardPage() {
           detectorBackend={health?.detector_backend}
         />
 
+        <AviationAnalyticsModule />
+
         <div className="grid gap-4 lg:grid-cols-3">
           <div className="lg:col-span-2">
+            <div className="mb-2 flex items-center gap-2">
+              <span className="font-mono text-[10px] uppercase tracking-widest text-signal-cyan">
+                Live FOD Scan
+              </span>
+              <span className="h-px flex-1 bg-slate-800" />
+            </div>
             <SafetyScoreCard score={safetyScore} loading={loading} />
           </div>
           <StatisticsPanel stats={stats} currentScore={safetyScore} />
