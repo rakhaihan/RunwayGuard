@@ -1,0 +1,44 @@
+# Environment
+.env
+.env.local
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+dist/
+build/
+*.egg-info/
+
+# Node
+node_modules/
+frontend/dist/
+*.local
+
+# Data & models
+data/*
+!data/.gitkeep
+backend/models/*
+!backend/models/.gitkeep
+!backend/models/README.md
+
+# IDE
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+.DS_Store
+
+# Logs
+*.log
+logs/

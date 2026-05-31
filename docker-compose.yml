@@ -1,0 +1,2 @@
+# Responsibility: Local multi-service stack (backend, frontend, optional DB).
+# Implementation: Phase 3 — services and volumes not wired yet.

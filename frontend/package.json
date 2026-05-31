@@ -1,0 +1,6 @@
+{
+  "name": "runwayguard-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "RunwayGuard AI dashboard — scaffold only, dependencies added in Phase 0"
+}

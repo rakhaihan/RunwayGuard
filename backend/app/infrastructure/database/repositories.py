@@ -1,0 +1,1 @@
+"""Responsibility: HistoryRepositoryPort SQLAlchemy implementation."""

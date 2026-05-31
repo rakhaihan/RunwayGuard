@@ -1,0 +1,3 @@
+# Responsibility: Runtime dependencies for pip install.
+# fastapi, uvicorn, pydantic-settings, opencv-python-headless, python-multipart, etc.
+# Implementation: Phase 0.
